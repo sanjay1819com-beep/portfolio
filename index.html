@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Soft_Tech PortfoGen — Build your portfolio in 5 minutes</title>
+<meta name="description" content="No-code portfolio maker. Pick a template, enter your details, publish. No design skills needed." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e0703c'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' font-weight='700' fill='%2317110c' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Every screen renders into #app. Routes: #/  #/edit  #/p/:slug -->
+  <div id="app" class="app-shell"></div>
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
+
+  <!-- Core -->
+  <script type="module" src="./core/utils.js"></script>
+  <script type="module" src="./core/config.js"></script>
+  <script type="module" src="./core/labels.js"></script>
+  <script type="module" src="./core/store.js"></script>
+  <script type="module" src="./core/schema.js"></script>
+  <script type="module" src="./core/export.js"></script>
+
+  <!-- Templates -->
+  <script type="module" src="./templates/registry.js"></script>
+
+  <!-- Pages -->
+  <script type="module" src="./pages/gallery.js"></script>
+  <script type="module" src="./pages/editor.js"></script>
+  <script type="module" src="./pages/portfolio.js"></script>
+
+  <!-- Motion + router (last) -->
+  <script type="module" src="./core/motion.js"></script>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
